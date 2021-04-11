@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Sofija</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./vendor/Magnific-Popup-master/dist/magnific-popup.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./vendor/isotope/isotope.min.js">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <style>
+        .active {
+            color: black !important;
+        }
+    </style>
+</head>
+<body>
+    
+    <a class="fixedButton" id="fixedButton" href>
+        <div class="roundedFixedBtn"><div id="arrowUp"><i class="fa fa-arrow-up"></i></div></div>
+     </a>
+
+     <header id="header">
+        <nav class="navbar navbar-custom-color justify-content-center">
+            <h3 class="navbar-title">
+                Козметичко студио Мис Софија
+            </h3>
+            <div class="menu-btn">
+                <div class="menu-btn_burger">
+                </div>
+            </div>
+            <div id="navbarOpened">
+                <ul>
+                    <li><a href="../Beauty Studio Miss Sofija/index.html">Дома</a></li>
+                    <li><a href="../Beauty Studio Miss Sofija/map.html">Мапа</a></li>
+                    <li><a href="../Beauty Studio Miss Sofija/services.html">Услуги</a></li>
+                    <li><a href="../Beauty Studio Miss Sofija/contactPage.html">Контакт</a></li>
+                </ul>
+          </div>
+        </nav>
+        <div id="navbarOpen" style="display: none; min-height: 100%;">
+            <ul>
+                <li><a href="../Beauty Studio Miss Sofija/index.html">Дома</a></li>
+                <li><a href="../Beauty Studio Miss Sofija/map.html">Мапа</a></li>
+                <li><a href="../Beauty Studio Miss Sofija/services.html">Услуги</a></li>
+                <li><a href="../Beauty Studio Miss Sofija/contactPage.html">Контакт</a></li>
+            </ul>
+      </div>
+    </header>
+
+    <main class="site-main">
+
+        <section class="services">
+
+            <div class="row text-center">
+                <div class="col">
+                    <h3 style="font: normal bold 25px/ 60px var(--roboto); color: #ff80d5; padding-bottom: 30px;">Тука можете да ги видите сите услуги кои ги нудиме, како и нашите разумни цени</h3>
+                </div>
+            </div>
+
+            <div class="container-fluid buttonContainer">
+                <div class="row pb-5">
+                    <div class="col-md-2 buttonCol">
+                        <div class="button-group btn-group-vertical" id="myBtnContainer">
+                            <button type="button" class="btn active" id="btn1" onclick="filterSelection('all')">Сè</button>
+                            <button type="button" class="btn" onclick="filterSelection('massages')">Масажи</button>
+                            <button type="button" class="btn" onclick="filterSelection('coldHairRemoval')">Депилација со ладен восок</button>
+                            <button type="button" class="btn" onclick="filterSelection('hotHairRemoval')">Депилација со топол восок</button>
+                            <button type="button" class="btn" onclick="filterSelection('nails')">Педикир</button>
+                            <button type="button" class="btn" onclick="filterSelection('facials')">Третмани на лице</button>
+                        </div>
+                        <!-- <div class="button-group btn-group-horizntal" id="myBtnContainer1">
+                            <button type="button" class="btn2 active" id="btn2" onclick="filterSelection('all')">Сè</button>
+                            <button type="button" class="btn2" onclick="filterSelection('massages')">Масажи</button>
+                            <button type="button" class="btn2" onclick="filterSelection('coldHairRemoval')">Депилација со ладен восок</button>
+                            <button type="button" class="btn2" onclick="filterSelection('hotHairRemoval')">Депилација со топол восок</button>
+                            <button type="button" class="btn2" onclick="filterSelection('nails')">Педикир</button>
+                            <button type="button" class="btn2" onclick="filterSelection('facials')">Третмани на лице</button>
+                        </div> -->
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row text-center grid">
+                            <div class="column col-lg-4 col-md-6 priceItem massages">
+                                <div class="priceItemInner">
+                                    <img src="./images/backneckshoulders.jpg" alt="massage">
+                                    <h4>Масажа Relax</h4>
+                                    <h6>550 денари</h6>
+                                    <button type="button" class="btn btn-sm"> Резервирајте термин</button>                                
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem massages">
+                                <div class="priceItemInner">
+                                    <img src="./images/fullbodymassage.jpg" alt="waxing">
+                                    <h4>Масажа на грб</h4>
+                                    <h6>350 денари</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem massages">
+                                <div class="priceItemInner">
+                                    <img src="./images/headneckshouldersmassage.jpg" alt="massage">
+                                    <h4>Антицелулитна масажа</h4>
+                                    <h6>250 денари</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem massages">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Мадеротерапија</h4>
+                                    <h6>500 денари</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem hotHairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/lipwaxing.jpg" alt="massage">
+                                    <h4>Цели нозе и препони</h4>
+                                    <h6>350 денари</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem hotHairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/halflegwaxing.jpg" alt="waxing">
+                                    <h4>Раце</h4>
+                                    <h6>150 денари</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem hotHairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/massage.jpg" alt="massage">
+                                    <h4>Лице</h4>
+                                    <h6>100 денари</h6>
+                                    <button type="button" class="btn btn-sm"> Резервирајте термин</button>                                
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem hotHairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Веѓи</h4>
+                                    <h6>100 денари</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem coldHairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/massage.jpg" alt="massage">
+                                    <h4>Цели нозе и интима</h4>
+                                    <h6>550 денари (ладен восок)</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem coldHairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Раце</h4>
+                                    <h6>250 денари (ладен восок)</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/massage.jpg" alt="massage">
+                                    <h4>Интима</h4>
+                                    <h6>200 денари (восок за една употреба)</h6>
+                                    <button type="button" class="btn btn-sm"> Резервирајте термин</button>                                
+                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem nails">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Педикир</h4>
+                                    <h6>350 денари</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem facials">
+                                <div class="priceItemInner">
+                                    <img src="./images/massage.jpg" alt="massage">
+                                    <h4>Хигиенски третман на лице</h4>
+                                    <h6>550 денари</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem facials">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Освежувачки третман на лице</h4>
+                                    <h6>350 денари</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                            <div class="column col-lg-4 col-md-6 priceItem facials">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Детокс</h4>
+                                    <h6>250 денари</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Резервирајте термин</button>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer-area">
+        <div class="container footerContainer">
+            <div class="row text-center footerRow">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footerColumn">
+                    <div class="">
+                        <div class="social text-center">
+                            <h5 class="text-uppercase">Заследете нè на социјалните мрежи</h5>
+                            <a href="https://www.facebook.com/%D0%9A%D0%BE%D0%B7%D0%BC%D0%B5%D1%82%D0%B8%D1%87%D0%BA%D0%BE-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%BE-%D0%9C%D0%98%D0%A1%D0%A1-1063009210420726/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/miss.studio/?igshid=g1v4ih45haf0"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footerColumn justify-content-center">
+                    <div class="social text-center">
+                        <h5 class="text-uppercase">Работно време</h5>
+                    </div>
+                    <div class="row  text-center">
+                    <h6><span style="color: #ff80d5;" class="workingHoursSpans">Понеделник - Петок :</span> 09:00 - 20:00</h6>
+                    <h6><span style="color: #ff80d5;" class="workingHoursSpans">Сабота :</span> 10:00 - 18:00</h6>
+                    <h6><span style="color: #ff80d5;" class="workingHoursSpans">Недела и Празници :</span> Затворено</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.3.5.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="./vendor/isotope/isotope.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+
+</body>
+</html>
